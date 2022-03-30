@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0 1rem 4rem 0 black;
+    flex-shrink: 0;
+
+}
+
+.card--buy{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card--buy img{
+    height: 70%;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.card--buy p{
+    height: 20%;
+    font-size: 75%;
+}
+
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.card--slider > h2{
+    font-size: 400%;
+    margin-bottom: 2rem;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.card--slider > input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    background: snow;
+    cursor: pointer;
+    border: 1px solid black;
+
+  }
+
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.timerText{
+    font-size: 200%;
+}
+
+.button{
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+
+}
+
+.button--start{
+    background: #00C897;
+
+}
+
+.button--stop{
+    background: red;
+
+}
+
+.button--reset{
+    background: #5463FF;
+
+}
