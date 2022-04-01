@@ -11,7 +11,7 @@ html{
 body{
     font-size: 2rem;
     font-family: sans-serif;
-    background: aqua;
+    background: gray;
     padding: 4rem;
 }
 
@@ -35,11 +35,29 @@ body{
 .card--first{
     grid-column: 1 / 5;
     grid-row: 1 / 7;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card--first >input{
+    width: 70%;
+    height: 4rem;
+    font-size: 2rem;
+    font-family: sans-serif;
+    padding-left: 2rem;
 }
 
 .card--second{
     grid-column: 5 / 13;
     grid-row: 1 / 9;
+    padding: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
 }
 
 .card--third{
@@ -67,4 +85,31 @@ body{
     background: red;
     color: #eeee;
     border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 87.5rem) {
+    body{
+        background: red;
+    }
+    .card--second{
+        grid-row: 1 / 13;
+    }
+
+    .card--third{
+        grid-column: 1 / 5;
+    }
+}
+
+@media screen and (max-width: 62.5rem) {
+    body{
+        background: blue;
+    }
+    .card--first, .card--second{
+        display: none;
+    }
+    .card--third{
+        grid-row: 1 / 13;
+        grid-column: 1 / 13;
+    }
+    
 }
