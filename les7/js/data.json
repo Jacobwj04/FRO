@@ -1,0 +1,7 @@
+{
+    "chart1_label": ["Pie", "Bar", "Doughnut", "line"],
+    "chart1_data": [37, 18, 18, 27],
+    "chart3_label": ["Monaco", "San Marino", "Vatican City", "Liechtenstein", "Tuvalu"],
+    "chart3_data" : [0.79, 23.63, 0.17, 61.78, 10]
+
+}
